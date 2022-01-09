@@ -1,0 +1,18 @@
+{
+    "minLength": {
+        "message": "The password must be at least 5 characters long",
+        "regex": "^.{5,}$"
+    },
+    "atLeastOneDigit": {
+        "message": "The password must contain at least 1 digit",
+        "regex": "^(?=.*[0-9]).+$"
+    },
+    "atLeastOneUpperOrSpecial": {
+        "message": "The password must contain at least 1 upper or special character",
+        "regex": "[A-Z]+|[^a-z0-9]+"
+    },
+    "maxConsecutiveCharacters": {
+        "message": "The password must not contain more than 3 consecutive characters",
+        "regex": "(.)\\1{2}"
+    }
+}
